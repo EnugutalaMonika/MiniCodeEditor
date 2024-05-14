@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Code Editor</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script src="https://kit.fontawesome.com/d07bc2f557.js" crossorigin="anonymous"></script>
+        <div class="container">
+            <div class="left">
+                <label><i class="fa-brands fa-html5"></i> HTML</label>
+                <textarea title="html" id="html_code" onkeyup="run()"></textarea>
+                <label> <i class="fa-brands fa-css3"></i> CSS</label>
+                <textarea title="css" id="css_code" onkeyup="run()"></textarea>
+                <label > <i class="fa-brands fa-js"></i> JS</label>
+                <textarea title="js" id="js_code" onkeyup="run()"></textarea>
+            </div>
+            <div class="right">
+                <label> <i class="fa-solid fa-play"></i> OUTPUT</label>
+                <iframe id="output" title="output"></iframe>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
